@@ -14,8 +14,8 @@ var transporter = nodemailer.createTransport({
      secure: false,//true
      port: 25,//465
     auth: {
-        user: "sohamworkstuff@gmail.com",
-        pass: "sohampingat1"
+        user: "youremail@gmail.com",
+        pass: "yourpasssword"
     }
   });
 
@@ -59,7 +59,7 @@ app.route("/")
         })
         var mailOptions = {
             from: email,
-            to: 'info@redpositive.in',
+            to: 'sender email',
             subject: 'Contact Me Page from '+ name ,
             text: " Email-id = "+ email + "\n Phone number= " + number + "\n Message=" + message};
           
